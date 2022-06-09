@@ -29,9 +29,8 @@ Initially, the plan was to train the models using ImageNet (ILSVRC 2012 subset),
 ## ResNeXt-50 Model Loss Functions & Submission Results
 ***
 ![png](resnext_models.png)
-Epoch is based off of a batch size of 16 - 1 & 11 are less accurate (more so 1)
 ***
-### Issues
+### Issues during Training
 
 - The bottleneck in improving the model (e.g. larger images, bigger batch sizes) seemed to be GPU memory. This was resolved by using Colab (but training runtimes took much longer).
 
