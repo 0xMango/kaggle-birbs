@@ -26,10 +26,12 @@ Pretrained model ResNeXt-101 (`resnext101_32x8d`) was also tested with different
 
 Initially, the plan was to train the models using ImageNet (ILSVRC 2012 subset), but it was taking way too long to even complete one epoch so the plan was to continue finding the best model and hyperparameters (with memory constraints in mind).
 
-# ResNeXt-50 Model Loss Functions & Submission Results
+## ResNeXt-50 Model Loss Functions & Submission Results
+***
+![png](resnext_models.png)
+***
+### Issues
 
-
-# Issues
 - The bottleneck in improving the model (e.g. larger images, bigger batch sizes) seemed to be GPU memory. This was resolved by using Colab (but training runtimes took much longer).
 
 - After encountering `RuntimeError: CUDA error: out of memory`, restarting runtime helps if modifying hyperparameters, notably batch size, continues to error out (excluding actual memory bottlenecks).
